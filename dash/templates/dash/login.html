@@ -1,0 +1,19 @@
+{% extends 'clg/base.html' %}
+{% load static %}
+
+{% block content %}
+ <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group" style="text-align: center;">
+                <legend class="border-bottom mb-4 bg-info" style="font-style: oblique; text-align: center;">Admin Login</legend>
+                <div class=" text-danger"><h6>Both Field are CASE-SENSITIVE</h6></div>
+                {{ form }}
+            </fieldset>
+            <div class="form-group" style="text-align: center;">
+                <button class="btn btn-outline-info" type="submit">Login</button>
+            </div>
+        </form>
+
+    </div>
+{% endblock %}

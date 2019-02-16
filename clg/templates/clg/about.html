@@ -1,0 +1,101 @@
+{% extends 'clg/base.html' %}
+{% load static %}
+{% block content %}
+
+     <style>
+  body {
+    position: relative;
+      background-color: aliceblue;
+
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+      margin-top: 150px;
+  }
+  div.col-8 div {
+    height: auto;
+         margin-top: 120px;
+  }
+  </style>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">About Poornima University</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">President Message</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Chairmen Message</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="#section4">Poornima Philosophy</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="#section5">History of Poornima</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-8">
+      <div id="section1" style="background-color: #4e555b;">
+        <h1 class="card-header" style="font-style: italic; background-color: lightgrey;">"Your Dreams Our Goals"</h1>
+        <p style="font-family: 'Candara Light'; color: white;">
+Poornima University (PU) is a Leading Private University in Rajasthan and proud constituent of Poornima Group (PG). The university is situated in Sitapura the educational hub of Jaipur in 32.67 Acres sprawling, lush green campus. State- of- the- art building area of university with independent academic & administration block, hostels, laboratories, playground etc. provide scholarly ambience for learning & liberty. It creates a warm and protective environment with a professional atmosphere to bring out best in the student to face the cut-throat global competition.<br>
+Poornima University brings together a community of wide ranging interests, competencies & aspirations from Engineering, Architecture, Design, Management, Commerce, Applied Science and Art. All these programmes are approved by the University Grant Commission (UGC).<br>
+Poornima University has been awarded as the best upcoming University of the India by ASSOCHAM, New Delhi. Poornima University has been awarded as the Top Private University of Rajasthan -2018.<br></p>
+      </div>
+
+
+      <div id="section2" style="background-color: #4e555b;">
+        <h1 class="card-header" style="align-content: center; font-family: 'Rage Italic';  background-color: lightgrey;">PRESIDENT MESSAGE</h1>
+          <img class="card-img" src="{% static 'pu/president.jpg' %}"style="height: 320px;width: 360px;">
+        <p style="font-family: 'Candara Light'; color: white;">Dr. K.K.S. Bhatia
+President
+Poornima University
+Poornima is a dynamic and youthful university that offers its students a truly global environment. Our students from more than 20 different states of the country enrich the cultural diversity of campus life and learning experience of our students.<br>
+At Poornima, you will find a highly focused teaching, learning and research environment that encourages innovation and new ideas for the betterment of society. We have an excellent student to faculty ratio, and you will be supported to achieve your potential by high quality and committed faculty, excellent teaching resources and facilities.
+Your choice of University is one of the most important decisions you will make. I am sure you will make the right choice for your future education and career. At Poornima, I am confident that we can help you achieve your ambitions.<br>
+For students the experience of being at Poornima University is rich and diverse. Our academic programs are of high quality, geared towards industry requirements. They are competitive and industry driven, ranging from engineering, science, technology, business, management, commerce, architecture, design to humanities and our initiative expands to all round knowledge. Our curriculum and pedagogy includes certain ideological inputs, and team building aspects, for enhancement of hard and soft skills amongst the students. University also offers abroad programs and internship programs in leading organizations of the country and international exposure at premier universities around the world.<br>
+Hope you will utilize the information available in the Prospectus in a productive way. In just a short span of 6 years the University has carved a niche for itself with excellent reputation and earned the recognitions as the best upcoming university – ASSOCHAM AWARD in 2016 and Top Private University in Rajasthan – 2018 by Jagran Josh.<br>
+Whether you are part of our Poornima Community, or in the process of joining us through study programs or research; I am proud to welcome you to our vibrant campus.
+
+</p>
+
+      </div>
+      <div id="section3" style="background-color: #4e555b;">
+        <h1 class="card-header" style="font-style: italic;  background-color: lightgrey;">"Chairperson Message"</h1>
+        <p style="font-family: 'Candara Light'; color: white;">At the very onset, I am prompted to use a John Dewey’s quote: “EDUCATION IS NOT PREPARATION FOR LIFE; EDUCATION IS LIFE ITSELF”. Poornima University (PU), a unique centre of higher education, now entering into sixth year as a Centre of Excellence, has been established by Shanti Education Society, the leading educational group in Rajasthan in engineering & management with a track record of thousands of alumni working in different parts of India and many countries abroad
+with a well laid out superbly landscaped campus that spans over 32 acres in the green environs at the outskirts of pink city of Jaipur. the university has an inviting ambience for academically committed and passionately creative young generation.<br>
+We have strong belief of enormous hidden potential of each human-being, and with our motto of ‘YOUR DREAMS, OUR GOALS’ nurture and develop knowledge, skills and wisdom in all our students leading to development of their mind and fulfilment of their dreams. We believe that rigors of the modern world in twenty first century require young graduates and professionals not to end their quest for knowledge when they pass out of the university. We have committed ourselves to create our graduates as bright professionals, innovators and entrepreneurs as well as lifelong learners and responsible citizens With a vision of creating knowledge based society with scientific temper, team spirit and dignity of labour to face global competitive challenges and the mission of evolving and developing skill based systems for effective delivery of knowledge,Poornima University is marching ahead with focus on new emerging areas of science and technology to best serve the world and contribute to betterment of mankind.<br>
+I hope you will enjoy our comprehensive website and utilize the information available on it in a productive way. We very cordially invite you to visit our campus and see for yourself how Poornima University is different. In just a short span of five years it has carved a niche for itself with excellent reputation and earned the recognition as the “Best Upcoming University of India- ASSOCHAM award 2016.”<br>
+I look forward to welcome you to Poornima University and assure that you will have exciting educational experience to help you fulfil your dreams.
+Jai Jai Poornima Sansthan, Jai hind.<br></p>
+      </div>
+      <div id="section4" style="background-color: #4e555b;">
+        <h1 class="card-header" style="font-style: italic; background-color: lightgrey;">Poornima Philosophy</h1>
+        <p style="font-family: 'Candara Light'; color: white;">Our vision is to create knowledge based society with scientific temper, team spirit and dignity of labour to face global competitive challenges.<br>
+Our mission is to evolve and develop skill based systems for effective delivery of knowledge so as to equip young professionals with dedication and commitment to excellence in all spheres of life.<br>
+We believe in providing quality education through faculty development, updating of facilities and continual improvement for meeting norms laid down by AICTE, keeping the stakeholders satisfied.<br>
+To show our gratitude and faith in Maa Saraswati, we, at Poornima dedicate our efforts in the form of Poornima Gaan, which has become part and parcel of our day-to-day life. It reminds us of our objectives and also the responsibilities towards society and humanity. You may download the original audio of Poornima Gaan by Clicking Here, You may also refer the lyrics of Poornima Gaan by Clicking Here. Poornima Gaan must be recited at the beginning of every public function (that involves persons from outside Poornima) right after the Ganesh Vandana & Traditional Lamp Lighting Ceremony.<br></p>
+      </div>
+      <div id="section5" style="background-color: #4e555b;">
+        <h1 class="card-header" style="font-style: italic;  background-color: lightgrey;">History of Poornima</h1>
+        <p style="font-family: 'Candara Light'; color: white;">Poornima Group of Colleges (PGC) started its journey about 2 decades ago with the setting up of Poornima College of Engineering in year 2000. PGC came into existence with the aim of promoting quality professional & technical education and today it is the most reputed group engaged in higher and technical education in Jaipur, Rajasthan.<br>
+Poornima Group is promoted by Shanti Education Society (SES) which came into existence in year 1999 by registering under Rajasthan Societies Act. The founder chairman of SES is Shri. Manohar Lal Singhi & founder vice chairman is Late Shri Arun Chandra Singhi. The main objective of SES is to promote Technical & Professional Education in state of Rajasthan with state of art infrastructure and strong academic philosophy. Its secretary, Ar. Shashikant Singhi, who has been a noted practitioner of Architecture and technocrat of repute, presently manages Society and its constituent institutions. Other members of the society are well known professionals.<br>
+Poornima has emerged as one of the most preferred engineering colleges among all the colleges in Jaipur and admission seekers in Rajasthan. This has been evident from the choices exercised by students choosing between a variety of top colleges and institutes in Jaipur, year-after-year.<br>
+Replete with modern education infrastructure, the institutions of Poornima Group of Colleges are spread over 1 million square meter of constructed area. Currently about 10000 students are enrolled here and over 3000 students reside on the campuses.<br>
+The institutions of the Poornima Group of Colleges have a very strong research orientation and culture. The group has a research portfolio of over Rs. 10 million of government funded projects.<br>
+What sets apart Poornima Group of Colleges from other colleges in Jaipur is its commitment to high quality, industry recognized delivery of education. Ensuring cultural and social enrichment of its students, Poornima institutes successfully earn the top rank in the state.<br>
+Poornima brand symbolizes excellence through initiative, reliability, transparency and professionalism of highest order and instills faith and confidence among all concerned in India and abroad.<br></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

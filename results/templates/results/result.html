@@ -1,0 +1,79 @@
+{% extends 'clg/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+</style>
+    <div class="container">
+    <form method="post" action="/student-result/">
+        {% csrf_token %}
+    <div class="form-group has-search">
+  <span class="fa fa-search form-control-feedback"></span>
+  <input type="text" name="srh" class="form-control" placeholder="Registration ID">
+    <div class="card"><button type="submit" class="btn btn-danger">Search</button><div>
+    </div></form>
+
+    </div>
+    <div>
+    {% if messages %}
+        <ul class="messages">
+            {% for k in messages %}
+            <li style="color: red;">
+                {{ k }}
+            </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+  <div class="table-responsive">
+  {% if sr %}
+      {% for k in sr %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Semester</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Registration</th>
+          <th>{{ k.subject_1 }}</th>
+          <th>{{ k.subject_2 }}</th>
+          <th>{{ k.subject_3 }}</th>
+          <th>{{ k.subject_4 }}</th>
+          <th>{{ k.subject_5 }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ k.sem  }}</td>
+          <td>{{ k.first  }}</td>
+          <td>{{ k.last }}</td>
+          <td>{{ k.regid }}</td>
+          <td>{{ k.sub1 }}</td>
+          <td>{{ k.sub2 }}</td>
+          <td>{{ k.sub3 }}</td>
+          <td>{{ k.sub4 }}</td>
+          <td>{{ k.sub5 }}</td>
+        </tr>
+      </tbody>
+    </table>
+      {% endfor %}
+  {% endif %}
+  </div>
+</div>
+
+{% endblock %}
